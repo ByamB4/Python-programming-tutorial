@@ -1,3 +1,3 @@
-# Python-programming-tutorial
+# Python програмчлалын цуврал хичээл
 
-To od
+To do
