@@ -1,16 +1,21 @@
-a = 10
-b = 5
+tutorial = 'Python programming tutorial'
 
-print(a + b)            # нэмнэ
-print(a - b)            # хасна
-print(a * b)            # үржвэр
-print(a / b)            # хуваана
-print(a // b)           # бүхэлтэй хуваана
+# Тэмдэгт мөрийг том болгож байна
+print(tutorial.upper())
+# Тэмдэгт мөрийг жижиг болгож байна
+print(tutorial.lower())
 
-print(a % b)            # модуль
-print(a > b)            # их
-print(a < b)            # бага
-print(a >= b)           # их бөгөөд тэнцүү
-print(a <= b)           # бага бөгөөд тэнцүү
+# 'Programming' үгийг тоолж байна
+print(tutorial.count('programming'))
 
-print(a ** b)           # зэрэг дэвшүүлнэ a ийн b зэрэг
+# 'Python' үгийг 'Java' аар сольж байна
+print(tutorial.replace('Python', 'Java'))
+
+# 'Python' үгийн index ийг хайж байна
+print(tutorial.index('Python'))
+
+name = 'Byambadalai'
+age = 20
+utube = 'ByamB4'
+
+print(f'{name} is {age} old.')
