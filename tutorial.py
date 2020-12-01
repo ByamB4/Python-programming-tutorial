@@ -1,10 +1,16 @@
-# Файлаас уншиж байна
-with open('lorem.txt', 'r') as f:
-    for line in f.readlines():
-        line = line.strip()
-        print(f'Line: {line}')
+try:
+    print(1 / 0)
 
-# Файлруу бичиж байна
-with open('out.txt', 'w') as f:
-    for i in range(10):
-        f.write(f'Line: {i}: some text\n')
+    f = open('not_found.txt')
+
+except ZeroDivisionError:
+    print('Toog 0t huvaaj bolohgui')
+
+except FileNotFoundError:
+    print('File oldsongui')
+
+else:
+    print(f.read())
+
+finally:
+    print('Exiting...')
