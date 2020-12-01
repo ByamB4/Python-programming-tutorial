@@ -1,19 +1,10 @@
-# Бодлого 1
-nums = input().split()
+# Файлаас уншиж байна
+with open('lorem.txt', 'r') as f:
+    for line in f.readlines():
+        line = line.strip()
+        print(f'Line: {line}')
 
-a = int(nums[0])
-b = int(nums[1])
-c = int(nums[2])
-d = int(nums[3])
-
-print(a + b + c + d)
-print(a - b - c - d)
-print(a * b * c * d)
-
-
-# Бодлого 2
-nums = input()
-print(int(nums[0]) + int(nums[-1]))
-
-# Бодлого 3
-print(input()[::-1])
+# Файлруу бичиж байна
+with open('out.txt', 'w') as f:
+    for i in range(10):
+        f.write(f'Line: {i}: some text\n')
