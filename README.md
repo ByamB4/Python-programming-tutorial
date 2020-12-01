@@ -1,25 +1,22 @@
-## Тэмдэгт мөр гэж юу вэ ? Хэрхэн ажиллах вэ
+## List гэж юу вэ ? Хэрхэн ажиллах талаар
 
 ```python
-tutorial = 'Python programming tutorial'
+names = ['ByamBa', 'David', 'John', 'Alice']
 
-# Тэмдэгт мөрийг том болгож байна
-print(tutorial.upper())
-# Тэмдэгт мөрийг жижиг болгож байна
-print(tutorial.lower())
+# Jack утгийг List лүү оруулж байна
+names.append('Jack')
 
-# 'Programming' үгийг тоолж байна
-print(tutorial.count('programming'))
+# ByamBa утгийг хэд байгааг тоолж байна
+names.count('ByamBa')
+# David хэд дэхь индекс болохыг олно. Хэрэв элемент байхгүй тохиолдолд -1 ирнэ
+names.index('David')
 
-# 'Python' үгийг 'Java' аар сольж байна
-print(tutorial.replace('Python', 'Java'))
+# Hako нэрийг 3 дахь индекс дээр оруулж байна
+names.insert(3, 'Hako')
 
-# 'Python' үгийн index ийг хайж байна
-print(tutorial.index('Python'))
+# Эрэмбэлж байна
+names.sort()
 
-name = 'Byambadalai'
-age = 20
-utube = 'ByamB4'
-
-print(f'{name} is {age} old.')
+# List утгуудыг устгаж байна
+names.clear()
 ```
