@@ -8,6 +8,7 @@ names.append('Jack')
 
 # ByamBa утгийг хэд байгааг тоолж байна
 names.count('ByamBa')
+
 # David хэд дэхь индекс болохыг олно. Хэрэв элемент байхгүй тохиолдолд -1 ирнэ
 names.index('David')
 
