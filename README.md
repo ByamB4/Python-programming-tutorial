@@ -1,16 +1,23 @@
-## Функц гэж юу вэ ? Хэрхэн ажиллах талаар
+## Spoj / Home - 1
 
 ```python
-def sum_of_numbers(*args, **kwargs):
-    """Will return sum of numbers"""
-    print(kwargs['name'])
-    return sum(args)
+# Бодлого 1
+nums = input().split()
+
+a = int(nums[0])
+b = int(nums[1])
+c = int(nums[2])
+d = int(nums[3])
+
+print(a + b + c + d)
+print(a - b - c - d)
+print(a * b * c * d)
 
 
-teacher = {
-    'name': 'Byambadalai',
-    'more': 'https://facebook.com/ByamB4'
-}
+# Бодлого 2
+nums = input()
+print(int(nums[0]) + int(nums[-1]))
 
-print(sum_of_numbers(6, 2, 3, 4, 5, **teacher))
+# Бодлого 3
+print(input()[::-1])
 ```

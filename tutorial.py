@@ -12,7 +12,6 @@ print(a * b * c * d)
 
 
 # Бодлого 2
-
 nums = input()
 print(int(nums[0]) + int(nums[-1]))
 
