@@ -1,14 +1,25 @@
-name = 'ByamB4'
-logged_in = False
+# Dictionary үүсгэж байна
+student = {
+    'name': 'Byamba',
+    'age': 20,
+    'courses': [
+        'C',
+        'Java',
+        'Python'
+    ],
+    2: 'test'
+}
 
-if not logged_in:
-    print('Please login first')
+# Нэрийг хэвлэж байна
+print(student['name'])
 
-elif logged_in and name == 'admin':
-    print('Welcome Admin')
+# Бүх 'key' ийг хэвлэж байна
+print(student.keys())
 
-elif logged_in and name != 'admin':
-    print(f'Welcome {name}')
+# Бүх түлхүүрийн утгийг хэвлэж байна
+print(student.values())
+# Түлхүүр болон утгийг хэвлэж байна
+print(student.items())
 
-else:
-    print('Something is wrong')
+# Шинэ түлхүүр нэмж байна
+student['address'] = 'Darkhan'
