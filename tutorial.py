@@ -1,18 +1,27 @@
-names = ['ByamBa', 'David', 'John', 'Alice']
+# Tuple үүсгэж байна
+tutorials = ('C', 'C++', 'Java', 'Python')
 
-# Jack утгийг List лүү оруулж байна
-names.append('Jack')
+# 'C' гэх утга хэд байгааг тоолж байна
+tutorials.count('C')
 
-# ByamBa утгийг хэд байгааг тоолж байна
-names.count('ByamBa')
-# David хэд дэхь индекс болохыг олно. Хэрэв элемент байхгүй тохиолдолд -1 ирнэ
-names.index('David')
+# 'C++' хэд дэхь индекс болохыг олж байна
+tutorials.index('C++')
 
-# Hako нэрийг 3 дахь индекс дээр оруулж байна
-names.insert(3, 'Hako')
+# Set үүсгэж байна
+nums_a = {1, 2, 3, 4, 5}
+nums_b = {4, 5, 6, 7, 8}
 
-# Эрэмбэлж байна
-names.sort()
+# Нэгдлийг хэвлэнэ 'union'
+print(nums_a | nums_b)
 
-# List утгуудыг устгаж байна
-names.clear()
+# Огтлолцлыг хэвлэнэ 'intersection'
+print(nums_a & nums_b)
+
+# nums_b байгаа элементүүдийг nums_a ээс хасна
+print(nums_a - nums_b)
+
+# nums_a байгаа элементүүдийг nums_b ээс хасна
+print(nums_b - nums_a)
+
+# Union - Intersection буюу нэгдлээс огтлолцлыг хасна
+print(nums_a ^ nums_b)
