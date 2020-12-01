@@ -1,19 +1,14 @@
-names = ['ByamBa', 'David', 'John', 'Alice']
+name = 'ByamB4'
+logged_in = False
 
-# Jack утгийг List лүү оруулж байна
-names.append('Jack')
+if not logged_in:
+    print('Please login first')
 
-# ByamBa утгийг хэд байгааг тоолж байна
-names.count('ByamBa')
+elif logged_in and name == 'admin':
+    print('Welcome Admin')
 
-# David хэд дэхь индекс болохыг олно. Хэрэв элемент байхгүй тохиолдолд -1 ирнэ
-names.index('David')
+elif logged_in and name != 'admin':
+    print(f'Welcome {name}')
 
-# Hako нэрийг 3 дахь индекс дээр оруулж байна
-names.insert(3, 'Hako')
-
-# Эрэмбэлж байна
-names.sort()
-
-# List утгуудыг устгаж байна
-names.clear()
+else:
+    print('Something is wrong')
