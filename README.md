@@ -1,7 +1,14 @@
-# Python програмчлалын хэлний цуврал хичээл
+## if __name__ == '__main__'
 
-Энд байгаа бүх файл нь [OyuLearn](https://www.youtube.com/OyuTube)-ийн цуврал хичээлийн хүрээнд хийгдсэн болно.
+```python
+print(f'my name is: {__name__}')
 
-## Хэрхэн ашиглах вэ ?
+def main():
+    print('Running from main')
 
-Жишээ нь: Та 8 дахь хичээлийн кодыг хайж байлаа гэж үзвэл **master**-аас **Хичээл-8** branch сонгон кодыг харах боломжтой.
+
+if __name__ == '__main__':
+    main()
+```
+
+
